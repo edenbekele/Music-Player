@@ -84,8 +84,11 @@ const hash = window.location.hash
             </a>
           )}
           {this.state.token && (
-            // Spotify Player Will Go Here In the Next Step
-          )}
+              <Player
+              item={this.state.item}
+              is_playing={this.state.is_playing}
+              progress_ms={this.progress_ms}
+              />          )}
           </header>
         </div>
       );
